@@ -7,3 +7,4 @@ s.license      = "MIT"
 s.platform     = :ios, "8.0"
 s.source       = { :git => "https://github.com/RakeshTatekonda609/SecondFrameworkSample.git", :tag => "1.0.0" }
 s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+echo "2.3" > .swift-version
