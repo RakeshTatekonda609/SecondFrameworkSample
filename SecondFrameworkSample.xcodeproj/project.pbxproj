@@ -43,7 +43,7 @@
 		302567631F1B3F6C0036B841 /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 302567431F1B3F6C0036B841 /* NSString+Additions.h */; };
 		302567641F1B3F6C0036B841 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 302567441F1B3F6C0036B841 /* NSString+Additions.m */; };
 		302567651F1B3F6C0036B841 /* Apple-logo-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 302567461F1B3F6C0036B841 /* Apple-logo-grey.png */; };
-		302567661F1B3F6C0036B841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302567471F1B3F6C0036B841 /* Main.storyboard */; };
+		302567661F1B3F6C0036B841 /* GBMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302567471F1B3F6C0036B841 /* GBMain.storyboard */; };
 		302567671F1B3F6C0036B841 /* GBAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 302567491F1B3F6C0036B841 /* GBAPIManager.h */; };
 		302567681F1B3F6C0036B841 /* GBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3025674A1F1B3F6C0036B841 /* GBAPIManager.m */; };
 		302567691F1B3F6C0036B841 /* GBArticleObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3025674C1F1B3F6C0036B841 /* GBArticleObjectModel.h */; };
@@ -90,7 +90,7 @@
 		302567431F1B3F6C0036B841 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		302567441F1B3F6C0036B841 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		302567461F1B3F6C0036B841 /* Apple-logo-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple-logo-grey.png"; sourceTree = "<group>"; };
-		302567471F1B3F6C0036B841 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		302567471F1B3F6C0036B841 /* GBMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GBMain.storyboard; sourceTree = "<group>"; };
 		302567491F1B3F6C0036B841 /* GBAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAPIManager.h; sourceTree = "<group>"; };
 		3025674A1F1B3F6C0036B841 /* GBAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAPIManager.m; sourceTree = "<group>"; };
 		3025674C1F1B3F6C0036B841 /* GBArticleObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBArticleObjectModel.h; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 				3025673F1F1B3F6C0036B841 /* GBSourceViewController.m */,
 				302567401F1B3F6C0036B841 /* HelperCategories */,
 				302567451F1B3F6C0036B841 /* Images */,
-				302567471F1B3F6C0036B841 /* Main.storyboard */,
+				302567471F1B3F6C0036B841 /* GBMain.storyboard */,
 				302567481F1B3F6C0036B841 /* Manager */,
 				3025674B1F1B3F6C0036B841 /* Models */,
 				302567501F1B3F6C0036B841 /* ViewControllers */,
@@ -361,7 +361,7 @@
 				302567651F1B3F6C0036B841 /* Apple-logo-grey.png in Resources */,
 				302567571F1B3F6C0036B841 /* GBArticleTableViewCell.xib in Resources */,
 				3025675E1F1B3F6C0036B841 /* GBSourceTableViewCell.xib in Resources */,
-				302567661F1B3F6C0036B841 /* Main.storyboard in Resources */,
+				302567661F1B3F6C0036B841 /* GBMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +628,7 @@
 				3025672B1F1B3F5C0036B841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3025672C1F1B3F5C0036B841 /* Build configuration list for PBXNativeTarget "SecondFrameworkSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +637,7 @@
 				3025672E1F1B3F5C0036B841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		302567701F1B40180036B841 /* Build configuration list for PBXAggregateTarget "UniversalBuilder" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +646,7 @@
 				302567721F1B40180036B841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

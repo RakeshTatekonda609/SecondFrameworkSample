@@ -116,7 +116,7 @@ static NSString *kIdentifiersSourceTableCell = @"GBSourceTableViewCell";
     NSBundle* frameworkBundle = [NSBundle bundleForClass:[self class]];
 
     UIStoryboard *storyboard =
-    [UIStoryboard storyboardWithName:@"Main"
+    [UIStoryboard storyboardWithName:@"GBMain"
                               bundle:frameworkBundle];
     GBSourceViewController *articleVC = [storyboard instantiateViewControllerWithIdentifier:@"sourceVC"];
 
