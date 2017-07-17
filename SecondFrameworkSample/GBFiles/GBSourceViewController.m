@@ -19,6 +19,8 @@
 //Cells
 #import "GBSourceTableViewCell.h"
 
+#import "GBUtility.h"
+
 @interface GBSourceViewController () <UITableViewDelegate , UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *sourceTableView;
@@ -57,9 +59,7 @@ static NSString *kIdentifiersSourceTableCell = @"GBSourceTableViewCell";
 {
     self.sourceTableView.delegate = self;
     self.sourceTableView.dataSource = self;
-    NSBundle* frameworkBundle = [NSBundle bundleForClass:[self class]];
-
-    [self.sourceTableView registerNib:[UINib nibWithNibName:kIdentifiersSourceTableCell bundle:frameworkBundle] forCellReuseIdentifier:kIdentifiersSourceTableCell];
+    [self.sourceTableView registerNib:[UINib nibWithNibName:kIdentifiersSourceTableCell bundle:[GBUtility getBundleForFramework]] forCellReuseIdentifier:kIdentifiersSourceTableCell];
     self.sourceTableView.rowHeight = UITableViewAutomaticDimension;
     self.sourceTableView.estimatedRowHeight = 44.0;
 }
@@ -117,7 +117,7 @@ static NSString *kIdentifiersSourceTableCell = @"GBSourceTableViewCell";
 
     UIStoryboard *storyboard =
     [UIStoryboard storyboardWithName:@"GBMain"
-                              bundle:frameworkBundle];
+                              bundle:[GBUtility getBundleForFramework]];
     GBSourceViewController *articleVC = [storyboard instantiateViewControllerWithIdentifier:@"sourceVC"];
 
     

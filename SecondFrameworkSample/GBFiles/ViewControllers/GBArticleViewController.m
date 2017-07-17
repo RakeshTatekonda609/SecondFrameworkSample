@@ -18,6 +18,8 @@
 //Cells
 #import "GBArticleTableViewCell.h"
 
+#import "GBUtility.h"
+
 @interface GBArticleViewController () <UITableViewDelegate , UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
@@ -51,9 +53,7 @@ static NSString *kIdentifierArticleTableCell = @"GBArticleTableViewCell";
 -(void)setUpTableView{
     self.articleTableView.delegate = self;
     self.articleTableView.dataSource = self;
-    NSBundle* frameworkBundle = [NSBundle bundleForClass:[self class]];
-
-    [self.articleTableView registerNib:[UINib nibWithNibName:kIdentifierArticleTableCell bundle:frameworkBundle] forCellReuseIdentifier:kIdentifierArticleTableCell];
+    [self.articleTableView registerNib:[UINib nibWithNibName:kIdentifierArticleTableCell bundle:[GBUtility getBundleForFramework]] forCellReuseIdentifier:kIdentifierArticleTableCell];
     self.articleTableView.rowHeight = UITableViewAutomaticDimension;
     self.articleTableView.estimatedRowHeight = 44.0;
 }
