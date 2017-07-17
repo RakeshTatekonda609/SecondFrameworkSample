@@ -11,6 +11,8 @@ s.source       = { :git => "https://github.com/RakeshTatekonda609/SecondFramewor
   s.author       = "Raywenderlich.com Tutorial Team"
   s.source_files = "SecondFrameworkSample", "SecondFrameworkSample/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
-
+ s.resource_bundles = {
+    'SecondFrameworkSample' => ['SecondFrameworkSample/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+  }
 end
 
