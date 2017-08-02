@@ -14,5 +14,7 @@ s.source       = { :git => "https://github.com/RakeshTatekonda609/SecondFramewor
  s.resource_bundles = {
     'SecondFrameworkSample' => ['SecondFrameworkSample/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
+  s.dependency 'AFNetworking'
+
 end
 
